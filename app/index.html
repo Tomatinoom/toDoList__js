@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="toDoList">
+                <div class="toDoList-body">
+                    <div class="toDoList-top">
+                        <div class="toDoList-top__filters-box">
+                            <p class="toDoList-top__filters-title">Фильтры:</p>
+                            <div class="toDoList-top__filters-btns">
+                                <button class="toDoList-top__filters-btn" data-filter="item-red"></button>
+                                <button class="toDoList-top__filters-btn" data-filter="item-yellow"></button>
+                                <button class="toDoList-top__filters-btn" data-filter="item-green"></button>
+                                <button class="toDoList-top__filters-btn" data-filter="item-all"></button>
+                            </div>
+                        </div>
+                        <div class="toDoList-top__add">
+                            <button class="toDoList-top__add__btn">Add</button>
+                        </div>
+                        <div class="toDoList-top__clear">
+                            <button class="toDoList-top__clear-list-btn">Очистить список</button>
+                            <button class="toDoList-top__clear-archive-btn">Очистить архив</button>
+                        </div>
+                    </div>
+                    <div class="toDoList-list">
+                        <div class="toDoList-list__item-preview visible">
+                            <p class="toDoList-list__item-preview-text">Добавьте задачу</p>
+                        </div>
+                    </div>
+                    <div class="archive-box">
+                        <div class="archive__btn-wrapper">
+                            <button class="archive__btn"></button>
+                        </div>
+                        <div class="archive__list"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="popup-add">
+                <div class="popup__form-body">
+                    <div class="popup__form-inner">
+                        <form class="popup__form" action="#" id="form">
+                            <input class="popup__form-input" autocomplete="off" name="item" type="text"
+                                placeholder="Введите задачу">
+                            <div class="popup__form-urgency">
+                                <div class="popup__form-urgency-item popup__form-urgency__green-box">
+                                    <label class="popup__form-urgency-label" for="green">
+                                        <input class="popup__form-urgency-checkbox" id="green" type="checkbox"
+                                            name="urgency-1" checked>
+                                        <span
+                                            class="popup__form-urgency-checkbox-style popup__form-urgency-checkbox-style-green"></span>
+                                        Не срочно</label>
+                                </div>
+                                <div class="popup__form-urgency-item  popup__form-urgency__yellow-box">
+                                    <label class="popup__form-urgency-label" for="yellow">
+                                        <input class="popup__form-urgency-checkbox" id="yellow" type="checkbox"
+                                            name="urgency-2">
+                                        <span
+                                            class="popup__form-urgency-checkbox-style popup__form-urgency-checkbox-style-yellow"></span>
+                                        Время еще есть</label>
+                                </div>
+                                <div class="popup__form-urgency-item  popup__form-urgency__red-box">
+                                    <label class="popup__form-urgency-label" for="red">
+                                        <input class="popup__form-urgency-checkbox" id="red" type="checkbox"
+                                            name="urgency-3">
+                                        <span
+                                            class="popup__form-urgency-checkbox-style popup__form-urgency-checkbox-style-red"></span>
+                                        Очень срочно</label>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="popup__form__btn-box popup__form-btn-box">
+                            <button class="popup__form__btn popup__form__btn-accept" type="button" disabled>
+                                Принять</button>
+                            <button class="popup__form__btn popup__form__btn-cancel" type="button"> Отмена</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-agreement">
+                <div class="popup-agreement-box">
+                    <div class="popup-agreement__inner">
+                        <p class="popup-agreement__text">Удалить все пункты?</p>
+                        <div class="popup-agreement__btns">
+                            <button class="popup-agreement__btn-accept popup__form__btn">Да</button>
+                            <button class="popup-agreement__btn-cancel popup__form__btn">Нет</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/serialize.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

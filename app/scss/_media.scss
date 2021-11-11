@@ -1,0 +1,93 @@
+@media (max-width: 750px) {
+  .toDoList-top {
+    &__filters-title {
+      margin-bottom: 5px;
+      margin-top: 0;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .toDoList {
+    &-top__add__btn {
+      margin: 0 50px 0 25px;
+    }
+    &-list__item-delete {
+      padding-left: 10px;
+    }
+  }
+  .container {
+    padding: 0;
+  }
+}
+@media (max-width: 650px) {
+  .popup__form {
+    &-inner {
+      padding: 30px 20px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .toDoList-top {
+    &__filters-title {
+      font-size: 20px;
+    }
+    &__clear {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .toDoList {
+    &-top__add__btn {
+      width: 80px;
+      height: 80px;
+      padding: 0;
+      border-radius: 45px;
+    }
+    &-top__clear-list-btn,
+    &-top__clear-archive-btn {
+      font-size: 12px;
+    }
+    &-list__item-delete {
+      margin-right: 0;
+      padding-right: 10px;
+      width: 25px;
+      height: 25px;
+    }
+    &-list__item-text {
+      font-size: 16px;
+      padding-left: 10px;
+      margin: 0 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+  .popup__form {
+    margin-bottom: 30px;
+    &-urgency {
+      flex-direction: column;
+    }
+    &-urgency-item {
+      margin-bottom: 15px;
+    }
+  }
+}
+@media (max-width: 370px) {
+  .toDoList {
+    &-top__add__btn {
+      margin: 0 25px;
+    }
+  }
+}
+@media (max-width: 340px) {
+  .toDoList-top {
+    &__filters-title {
+      font-size: 18px;
+      padding-left: 10px;
+    }
+    &__filters-btn {
+      margin: 7px 2px 0 5px;
+    }
+  }
+}
